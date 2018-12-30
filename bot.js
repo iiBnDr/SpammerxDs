@@ -15,6 +15,18 @@ client.on('ready', () => {
 });
 
 
+client.on('ready', () => {
+   console.log(`----------------`);
+      console.log(`Desert Bot- Script By : i1Suhaib`);
+        console.log(`----------------`);
+      console.log(`ON ${client.guilds.size} Servers '     Script By : i1Suhaib ' `);
+    console.log(`----------------`);
+  console.log(`Logged in as ${client.user.tag}!`);
+client.user.setGame(`iiBnDr's Spam Bot :heart:`,"http://twitch.tv/S-F")
+client.user.setStatus("dnd")
+});
+
+
 client.on('message', message => {
     if(message.content === 'راتب'){
         message.channel.send('#daily')
@@ -26,6 +38,7 @@ client.on('message', message => {
         message.channel.send('#credits')
     }
 });
+
 
 client.on('message', message => {
     if(message.content === 'ريب'){
